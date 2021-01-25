@@ -1,0 +1,44 @@
+.Header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.Logo {
+    font-size: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.Logo span {
+    color: #ff6665;
+}
+.Nav {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+.Nav a {
+    display: block;
+    padding: 10px;
+}
+.Nav a:hover,
+.Nav .active {
+    color: #ff6665;
+}
+
+@media screen and (min-width: 500px) {
+    .Header {
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        text-align: left;
+    }
+    .Logo {
+        width: 40%;
+        margin-bottom: 0;
+    }
+    .Nav {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 60%;
+    }
+}

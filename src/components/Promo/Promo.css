@@ -1,0 +1,55 @@
+.Promo {
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.Promo-text {
+    width: 100%;
+}
+.Promo-text h1 {
+    font-size: 42px;
+    line-height: 140%;
+}
+.Promo-text p {
+    font-size: 18px;
+    line-height: 130%;
+}
+.Promo-img {
+    width: 100%;
+}
+.Promo-img img {
+    max-width: 90%;
+}
+
+@media screen and (min-width: 500px) {
+    .Promo-img img {
+        max-width: 50%;
+    }
+    .Promo-text h1 {
+        font-size: 62px;
+        line-height: 140%;
+    }
+    .Promo-text p {
+        font-size: 28px;
+        line-height: 130%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .Promo {
+        justify-content: space-between;
+        padding: 50px 0;
+        text-align: left;
+    }
+    .Promo-text {
+        width: 60%;
+    }
+    .Promo-img {
+        width: 40%;
+        text-align: right;
+    }
+    .Promo-img img {
+        max-width: 70%;
+    }
+}
